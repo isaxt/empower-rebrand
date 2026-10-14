@@ -258,3 +258,15 @@ main { padding: var(--pad) var(--pad) var(--pad) 0; min-width: 0; }
 .notes__item dd { margin: 0; font-size: 0.98rem; line-height: 1.6; }
 .notes__item strong { display: block; font-family: var(--serif); font-weight: 300; font-size: 1.35rem; line-height: 1.2; color: #fff; margin-bottom: 6px; }
 @media (max-width: 1000px) { .notes { grid-template-columns: 1fr; } }
+
+/* groups: Screens / Campaign */
+.pair { display: grid; grid-template-columns: 0.717fr 1.143fr; gap: var(--pad); align-items: stretch; }
+.pair .panel, .pair .zoom { height: 100%; }
+.pair .img { height: 100%; object-fit: cover; }
+.side__nav .is-group a { color: #fff; font-weight: 500; margin-top: 10px; }
+.side__nav .is-sub a { padding-left: 40px; font-size: 0.95rem; }
+.side__nav .is-sub a::before { left: 24px; }
+.side__nav .is-group a::before { display: none; }
+.side__nav .is-group a[aria-current] { color: #fff; }
+.side__nav .is-group a[aria-current]::after { content: ''; position: absolute; left: 8px; top: 50%; width: 4px; height: 4px; margin-top: -2px; border-radius: 50%; background: #fff; }
+@media (max-width: 1000px) { .pair { grid-template-columns: 1fr; } .pair .img { height: auto; } .side__nav .is-sub a { padding-left: 44px; font-size: 1.4rem; } }
