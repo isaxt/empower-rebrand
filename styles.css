@@ -270,3 +270,14 @@ main { padding: var(--pad) var(--pad) var(--pad) 0; min-width: 0; }
 .side__nav .is-group a[aria-current] { color: #fff; }
 .side__nav .is-group a[aria-current]::after { content: ''; position: absolute; left: 8px; top: 50%; width: 4px; height: 4px; margin-top: -2px; border-radius: 50%; background: #fff; }
 @media (max-width: 1000px) { .pair { grid-template-columns: 1fr; } .pair .img { height: auto; } .side__nav .is-sub a { padding-left: 44px; font-size: 1.4rem; } }
+
+/* tighter spacing between sections */
+.chapter { padding-block: clamp(20px, 2.4vw, 36px) clamp(24px, 3vw, 44px); }
+.chapter__head { margin-bottom: clamp(20px, 2.4vw, 32px); }
+.chapter--first .chapter__head { margin-top: clamp(20px, 2.4vw, 32px); }
+.split, .notes { margin-top: clamp(24px, 2.6vw, 40px); }
+.closer { margin-top: clamp(20px, 2.4vw, 32px); }
+
+/* app icon panel hugs the phone image */
+.iconpanel { display: block; width: fit-content; max-width: 100%; padding: clamp(14px, 1.6vw, 24px); }
+.iconpanel .zoom { max-width: 300px; }
